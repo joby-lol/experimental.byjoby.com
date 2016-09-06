@@ -10,8 +10,6 @@
     <p><strong>Software license:</strong> unless otherwise noted, original software posted to this site is <a href="/license.php">MIT Licensed</a>.</p>
     <hr/>
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">creative works on experimental.byjoby.com</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://experimental.byjoby.com" property="cc:attributionName" rel="cc:attributionURL">Joby Elliott</a> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-    <hr/>
-    <p>This site has a <a href="/humans.txt"><img src="/layout/humanstxt-isolated-blank.gif" alt="humans.txt" style="vertical-align:middle;display:inline-block;" /></a> and <a href="http://humanstxt.org/">so should yours!</a></p>
 </div>
 <script src="/2014/lifecanvas/underscore.js"></script>
 <script src="/2014/lifecanvas/lifecanvas.js"></script>

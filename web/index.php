@@ -16,7 +16,6 @@
 ?>
 
 <div id="experimental-page">
-    <h1>Experimental projects</h1>
     <p>Unless otherwise noted, everything you see here is experimental. That means varying degrees of not tested enough. Some of it is pretty neat, and feel free to use it and copy it, but you should <em>really</em> run it through its paces before you go using it in a production site or anything.</p>
     <?php
     	$projects = projectList();

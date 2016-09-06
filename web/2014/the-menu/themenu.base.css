@@ -17,6 +17,9 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 	height:40px;
 }
+.theMenu a {
+	color:inherit;
+}
 .theMenu-links {
 	list-style:none;
 	margin:0;
@@ -130,7 +133,7 @@
 .theMenu .more-links .theMenu-links,
 .theMenu-links li .theMenu-links {
 	position:absolute;
-	top:100%;
+	top:90%;
 	right:0;
 	background:#333;
 	box-shadow:0 0 10px rgba(0,0,0,0.2) inset;
@@ -165,7 +168,7 @@
 */
 .theMenu-links li .theMenu-dropdown {
 	position:absolute;
-	top:100%;
+	top:90%;
 	right:0;
 	box-shadow:0 0 5px rgba(0,0,0,0.2) inset;
 	max-height:200px;

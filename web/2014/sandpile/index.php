@@ -11,21 +11,9 @@
 <?php include($_SERVER['DOCUMENT_ROOT'].'/branding-block.inc'); ?>
     
     <div id="experimental-page">
-        <canvas id="sandpile"  height="640" width="640" style="width:100%;"><img src="static.png" alt="sandpile static display" /></canvas>
-        <div id="controls">
-            <ul>
-                <li><a href="#modelcontrols">Model Controls</a></li>
-                <li><a href="#displaycontrols">Display Controls</a></li>
-            </ul>
-            <div id="modelcontrols">
-                Model update speed and whatnot
-            </div>
-            <div id="displaycontrols">
-                display controls will go here
-            </div>
-        </div>
-        <h1>JS Sandpile Model</h1>
+    	<h1>JS Sandpile Model</h1>
         <p>See <a href="http://en.wikipedia.org/wiki/Abelian_sandpile_model">http://en.wikipedia.org/wiki/Abelian_sandpile_model</a>.
+        <p><canvas id="sandpile"  height="640" width="640" style="width:100%;"><img src="static.png" alt="sandpile static display" /></canvas></p>
     </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

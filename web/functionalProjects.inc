@@ -29,17 +29,27 @@ function projectInfo ($path) {
 		"sticky" => "0",
 		"thumb" => "/layout/defaultthumb.png"
 	);
-	if (file_exists($path."/.project/info")) {
+	$ini = false;
+	if (file_exists($path."/.project/info") && is_file($path."/.project/info")) {
 		$ini = parse_ini_file($path."/.project/info");
-		if ($ini) {
-			$newProject = array_merge($newProject,$ini);
-		}
 		$thumb_extensions = array("png","jpg","jpeg","gif","svg");
 		foreach ($thumb_extensions as $extension) {
 			if (file_exists($path."/.project/thumb.".$extension)) {
 				$newProject["thumb"] = $path."/.project/thumb.".$extension;
 			}
 		}
+	}
+	if (file_exists($path."/.project") && is_file($path."/.project")) {
+		$ini = parse_ini_file($path."/.project");
+		if ($ini) {
+			$newProject = array_merge($newProject,$ini);
+		}
+	}
+	if ($ini) {
+		if (array_key_exists('modified', $ini) && $ini['modified']) {
+			$ini['modified'] = strtotime($ini['modified']);
+		}
+		$newProject = array_merge($newProject,$ini);
 	}
 	return $newProject;
 	/*

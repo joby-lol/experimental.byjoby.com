@@ -1,0 +1,3 @@
+bitwise = function () {
+    
+}

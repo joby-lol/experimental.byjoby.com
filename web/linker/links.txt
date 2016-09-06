@@ -1,0 +1,7 @@
+paper|http://design.byjoby.com/2015/paper/
+art/things-ive-built-gas-powered-bike/|http://blog.byjoby.com/2010/09/meet-gila-monster.html
+development/pixelpile-logo-design/|http://blog.byjoby.com/2014/09/how-pixelpile-logo-works.html
+blog/passively-heated-and-cooled-earthbag-house/|http://blog.byjoby.com/2010/09/passively-heated-and-cooled-earthbag.html
+blog/small-optimizations-aggregate/|http://blog.byjoby.com/2014/05/small-optimizations-in-aggregate.html
+blog/grilled-pineapple-tofu-kebabs/|http://blog.byjoby.com/2014/04/grilled-pineapple-tofu-kebabs.html
+blog/easily-make-bloggers-simple-theme-responsive/|http://blog.byjoby.com/2014/04/easily-make-blogger-theme-responsive.html

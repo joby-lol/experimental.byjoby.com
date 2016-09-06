@@ -1,0 +1,30 @@
+.packed-container {
+    width:300px;
+    margin:0 auto;
+}
+.packed-container .item {
+    width:300px;
+    outline:1px solid #ddd;
+    /*margin-bottom:20px;*/
+}
+.packed-container .item.wf {
+    width:100%;
+}
+/* 2 columns */
+@media (min-width:660px) {
+    .packed-container {width:620px;}
+    .packed-container .item.w2 {width:620px;}
+}
+/* 3 columns */
+@media (min-width:980px) {
+    .packed-container {width:940px;}
+    .packed-container .item.w3 {width:940px;}
+}
+/* 4 columns */
+@media (min-width:1300px) {
+    .packed-container {width:1260px;}
+}
+/* 5 columns */
+@media (min-width:1620px) {
+    .packed-container {width:1580px;}
+}

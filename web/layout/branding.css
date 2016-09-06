@@ -1,0 +1,232 @@
+body {
+    margin:0;
+    background:#fafafa;
+    font-family:"Roboto",sans-serif;
+    background-color:rgba(34, 147, 23, 0.15);
+    background-image:url(http://static.byjoby.com/2015/branding/bg-green.png?implace=scale:1400;jpeg:90); 
+}
+img {
+    max-width:100%;
+}
+#experimental-page,
+.experimental-page {
+    background:#fff;
+    padding:20px;
+    max-width:40em;
+    margin:20px auto;
+    position:relative;
+}
+#experimental-page:after,
+.experimental-page:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+#experimental-page h1:first-child,
+.experimental-page h1:first-child {
+    margin-top:0;
+}
+.experimental-aside {
+    
+}
+.byjobywidget,
+.byjobywidget *,
+.byjobywidget *:before,
+.byjobywidget *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    font-family:"Roboto",sans-serif;
+}
+.byjobywidget {
+    font-family:"Roboto",sans-serif;
+    background:rgba(34, 147, 23, 1) url(http://static.byjoby.com/2015/branding/bg-green.png?implace=crop:1920x100;jpeg:90);
+    background-position:center center;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin:0;
+	padding:0;
+    color:#fff;
+    font-size:16px;
+    line-height:20px;
+    padding:10px;
+    z-index:100;
+    position:relative;
+    box-shadow:0 0 7px rgba(0,0,0,0.5);
+    text-align:center;
+}
+.byjobywidget:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.byjobywidget a {
+    color:#fff;
+    text-decoration:underline;
+}
+.byjobywidget__header {
+    font-size:32px;
+    line-height:40px;
+    padding:0;
+    margin:0;
+    font-weight:900;
+    text-decoration:none;
+    display:inline-block;
+    vertical-align:middle;
+}
+.byjobywidget__header2 {
+    font-size:32px;
+    line-height:40px;
+    padding:0;
+    margin:0;
+    font-weight:100;
+    text-decoration:none;
+    display:inline-block;
+    vertical-align:middle;
+}
+a.byjobywidget__mainsite {
+    display:inline-block;
+    background:#fff;
+    line-height:20px;
+    padding:10px 15px;
+    color:rgba(34, 147, 23, 1);
+    box-shadow:0 0 5px rgba(0,0,0,0.25);
+    text-decoration:none;
+    transition:all 0.25s ease-in-out;
+    border-radius:20px;
+    opacity:0.6;
+    z-index:1;
+    position:relative;
+    vertical-align:middle;
+    margin-left:1em;
+}
+a.byjobywidget__mainsite:hover {
+    box-shadow:0 0 7px rgba(0,0,0,0.5);
+    color:#000;
+    opacity:1;
+}
+a.byjobywidget__homelink {
+    opacity:0.9;
+    transition:all 0.25s ease-in-out;
+    z-index:1;
+    position:relative;
+    text-decoration:none;
+}
+a.byjobywidget__homelink:hover {
+    opacity:1;
+}
+.byjobywidget__lastupdated {
+    position:relative;
+    z-index:1;
+    display:inline-block;
+    margin:0 10px;
+    margin-top:5px;
+}
+.byjobywidget__lastupdated.recently-updated {
+    font-weight:600;
+    background-color:#00aeef;
+    padding:5px;
+}
+
+.byjobyfooter {
+    padding:10px;
+    text-align:center;
+    font-size:12px;
+    color:#fff;
+    background:#000;
+    background:rgba(0,0,0,0.75);
+    font-family:"Roboto",sans-serif;
+}
+.byjobyfooter a {
+	color:#fff;
+}
+.byjobyfooter p, .byjobyfooter ul {
+    margin:5px 0;
+}
+.byjobyfooter hr {
+    background:rgba(34, 147, 23, 1);
+    border:0;
+    height:1px;
+}
+.byjobyfooter ul {
+    list-type:none;
+    padding:0;
+    display:inline-block;
+}
+.byjobyfooter ul li {
+    display:inline-block;
+}
+.byjobyfooter ul li a {
+    display:inline-block;
+    background:rgba(34, 147, 23, 1);
+    color:#fff;
+    padding:3px;
+    margin:3px;
+    font-weight:700;
+}
+.byjobyfooter ul li a:hover {
+    display:inline-block;
+    background:#eee;
+    color:rgba(34, 147, 23, 1);
+}
+
+.byjoby-branding-non-free {
+    font-family:"Roboto",sans-serif;
+    color:#fff;
+    font-size:12px;
+    line-height:15px;
+    background:#00AEEF;
+    padding:10px;
+    text-align:center;
+    color:#fff;
+    text-shadow:0 0 2px rgba(0,0,0,0.25);
+}
+.byjoby-branding-non-free-wrapper {
+    max-width:50em;
+    margin:0 auto;
+    padding-left:90px;
+    text-align:left;
+    background-image:url(/layout/copyright-reserved-icon.png);
+    background-repeat:no-repeat;
+    background-position:-10px center;
+}
+.byjoby-branding-non-free h2 {
+    margin:0;
+}
+.byjoby-branding-non-free p {
+    margin:0;
+    margin-top:5px;
+}
+.byjoby-branding-non-free a {
+    color:#fff;
+}
+#experimental-page > .byjoby-branding-non-free,
+.experimental-page > .byjoby-branding-non-free {
+    margin:20px -20px;
+}
+#experimental-page > .byjoby-branding-non-free:first-child,
+.experimental-page > .byjoby-branding-non-free:first-child {
+    margin-top:-20px;
+}
+#experimental-page > .byjoby-branding-non-free:last-child,
+.experimental-page > .byjoby-branding-non-free:last-child {
+    margin-bottom:-20px;
+}
+
+@media (max-width:640px) {
+    .byjobywidget {
+        text-align:center;
+    }
+    .byjobywidget__header,
+    .byjobywidget__header2 {
+        font-size:24px;
+        float:none;
+        line-height:30px;
+        text-decoration:none;
+        display:inline-block;
+    }
+    a.byjobywidget__mainsite {
+        xmargin-top:10px;
+        float:none;
+    }
+}

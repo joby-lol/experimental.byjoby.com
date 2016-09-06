@@ -1,0 +1,33 @@
+.gridpack-area {
+    width:300px;
+    margin:0 auto;
+}
+.gridpack-area .gridpack-item {
+    width:300px;
+    background:#eee;
+    margin:10px;
+    float:left;
+    overflow:hidden;
+}
+.gridpack-area .gridpack-item.gridpack-full {
+    width:100%;
+}
+/* 2 columns */
+@media (min-width:660px) {
+    .gridpack-area {width:620px;}
+    .gridpack-area .gridpack-item {width:620px;}
+    .gridpack-area .gridpack-item.gridpack-small {width:300px;}
+}
+/* 3 columns */
+@media (min-width:980px) {
+    .gridpack-area {width:940px;}
+    .gridpack-area .gridpack-item.gridpack-big {width:940px;}
+}
+/* 4 columns */
+@media (min-width:1300px) {
+    .gridpack-area.gridpack-active {width:1260px;}
+}
+/* 5 columns */
+@media (min-width:1620px) {
+    .gridpack-area.gridpack-active {width:1580px;}
+}

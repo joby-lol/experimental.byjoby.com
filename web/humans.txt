@@ -1,0 +1,14 @@
+/* TEAM */
+Designer/Developer: Joby Elliott
+Site: byjoby.com
+Location: Albuquerque, USA
+
+/* THANKS */
+
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: PHP, jQuery, jQuery UI
+Software: Sublime Text, WinSCP
+
+jQuery UI Theme: http://goo.gl/ZqlOaZ

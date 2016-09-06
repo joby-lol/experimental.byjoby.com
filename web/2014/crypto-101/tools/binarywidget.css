@@ -1,0 +1,36 @@
+.binary-widget {
+    height:40px;
+    width:100%;
+    background:#eee;
+    margin-bottom:5px;
+}
+.binary-widget-bits {
+
+}
+.binary-widget-bit {
+    display:inline-block;
+    height:40px;
+    position:relative;
+}
+.binary-widget-bit:before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.binary-widget-bit-0:before {
+    background:#fff;
+    box-shadow:0 0 3px rgba(0,0,0,0.2) inset;
+}
+.binary-widget-bit-1:before {
+    background:#000;
+}
+.binary-widget-interactive .binary-widget-bit {
+    cursor:pointer;
+}
+.binary-widget-interactive .binary-widget-bit:hover:before {
+    transform:scale(1.1);
+}

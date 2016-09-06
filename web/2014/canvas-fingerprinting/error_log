@@ -1,0 +1,2 @@
+[21-Jul-2014 18:28:55 America/New_York] PHP Warning:  include(/byjoby.inc): failed to open stream: No such file or directory in /home/byjobyne/public_html/experimental.byjoby.com/2014/canvas-fingerprinting/index.php on line 8
+[21-Jul-2014 18:28:55 America/New_York] PHP Warning:  include(): Failed opening '/byjoby.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/byjobyne/public_html/experimental.byjoby.com/2014/canvas-fingerprinting/index.php on line 8

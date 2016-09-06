@@ -1,0 +1,621 @@
+.material-form,
+.material-form *,
+.material-form *:before,
+.material-form *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    font-family:"Roboto",sans-serif;
+    letter-spacing:0.025em;
+}
+.material-form {
+    padding:16px;
+    font-size:14px;
+    line-height:24px;
+    background:#fff;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.24);
+}
+.material-form label {
+    vertical-align:middle;
+    display:block;
+    font-weight:600;
+    color:rgba(0,0,0,0.54);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.material-form hr {
+    display:block;
+    height:2px;
+    margin:16px -16.25px;
+    border:0;
+    background:rgba(0,0,0,0.12);
+}
+.material-form > *:first-child {
+    margin-top:0;
+}
+.material-form > *:last-child {
+    margin-bottom:0;
+}
+/*
+    Errors
+*/
+.material-form .error {
+    background:rgba(255,152,0,0.12);
+}
+.material-form .error-message {
+    background:#ff6d00;
+    color:rgba(255,255,255,0.95);
+    font-weight:600;
+    padding:8px;
+}
+/*
+    Text fields
+    Much of this is shared with SELECTs
+*/
+.material-form input,
+.material-form select {
+    display:inline-block;
+    vertical-align:middle;
+    outline:0;
+    padding:0;
+    text-indent:2px;
+    margin:0;
+    margin-bottom:4px;
+    border:0;
+    border-bottom:2px solid rgba(0,0,0,0.27);
+    color:rgba(0,0,0,0.87);
+    font-weight:600;
+    outline:0 dotted rgba(0,0,0,0.1);
+    transition:all 0.5s ease;
+    font-size:16px;
+    line-height:24px;
+    background:transparent;
+}
+.material-form input:focus,
+.material-form select:focus {
+    outline:2px dotted rgba(0,0,0,0.1);
+    border-bottom:2px solid rgba(0,0,0,0.54);
+    transition:all 0.25s ease;
+}
+.material-form input:disabled,
+.material-form select:disabled {
+    background:rgba(0,0,0,0.08);
+    color:rgba(0,0,0,0.54);
+    cursor:default;
+}
+.material-form input[readonly] {
+    background:rgba(0,0,0,0.08);
+    color:rgba(0,0,0,0.87);
+}
+.material-form input:placeholder-shown {
+    opacity:1;
+    color:rgba(0,0,0,0.27);
+    font-weight:400;
+}
+.material-form input::-webkit-input-placeholder {
+    opacity:1;
+    color:rgba(0,0,0,0.27);
+    font-weight:400;
+}
+.material-form input:-moz-placeholder {
+    opacity:1;
+    color:rgba(0,0,0,0.27);
+    font-weight:400;
+}
+.material-form input::-moz-placeholder {
+    opacity:1;
+    color:rgba(0,0,0,0.27);
+    font-weight:400;
+}
+.material-form input:-ms-input-placeholder {
+    opacity:1;
+    color:rgba(0,0,0,0.27);
+    font-weight:400;
+}
+/*
+    Text areas
+*/
+.material-form textarea {
+    background:rgba(0,0,0,0.04);
+    color:rgba(0,0,0,0.84);
+    font-weight:400;
+    border:0;
+    padding:8px;
+    font-size:15px;
+    line-height:24px;
+    outline:0;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    margin-bottom:4px;
+}
+.material-form textarea:disabled {
+    background:rgba(0,0,0,0.08);
+    color:rgba(0,0,0,0.57);
+}
+.material-form textarea[readonly] {
+    background:rgba(0,0,0,0.08);
+    color:rgba(0,0,0,0.84);
+}
+/*
+    Select boxes
+*/
+.material-form select {
+    color:rgba(0,0,0,0.87);
+    font-weight:600;
+    padding-right:16px;
+    cursor:pointer;
+}
+.material-form select:disabled {
+    cursor:default;
+}
+/*
+    Buttons
+*/
+.material-form button,
+.material-form input[type="submit"],
+.material-form input[type="reset"],
+.material-form input[type="button"] {
+    padding:16px;
+    text-transform:uppercase;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.27);
+    background:rgba(0,0,0,0.12);
+    font-weight:600;
+    border:0;
+    display:inline-block;
+    margin:0;
+    margin-bottom:4px;
+    cursor:pointer;
+    transition:all 0.25s ease;
+    font-size:16px;
+    line-height:24px;
+    color:rgba(0,0,0,0.54);
+    text-indent:0;
+}
+.material-form button:hover,
+.material-form input[type="submit"]:hover,
+.material-form input[type="reset"]:hover,
+.material-form input[type="button"]:hover {
+    transform:translate(0,0.5px);
+    box-shadow:0.5px 0.5px 1.5px rgba(0,0,0,0.14);
+    background:rgba(0,0,0,0.14);
+}
+.material-form button:focus,
+.material-form input[type="submit"]:focus,
+.material-form input[type="reset"]:focus,
+.material-form input[type="button"]:focus {
+    transform:translate(0,-1px);
+    box-shadow:2px 2px 3px rgba(0,0,0,0.14);
+    background:rgba(0,0,0,0.20);
+    outline:0;
+    transition:all 0.1s ease;
+}
+.material-form button:active,
+.material-form input[type="submit"]:active,
+.material-form input[type="reset"]:active,
+.material-form input[type="button"]:active {
+    transform:translate(0,-4px);
+    box-shadow:5px 5px 6px rgba(0,0,0,0.14);
+    background:rgba(0,0,0,0.20);
+    transition:all 0.1s ease;
+}
+.material-form button:disabled,
+.material-form input[type="submit"]:disabled,
+.material-form input[type="reset"]:disabled,
+.material-form input[type="button"]:disabled {
+    transform:translate(0,0);
+    box-shadow:none;
+    background:rgba(0,0,0,0.08);
+    transition:all 0.1s ease;
+    color:rgba(0,0,0,0.27);
+    cursor:default;
+}
+/*
+    Flat buttons
+*/
+.material-form button.flat,
+.material-form input[type="submit"].flat,
+.material-form input[type="reset"].flat,
+.material-form input[type="button"].flat {
+    background:transparent;
+    box-shadow:none;
+    transform:none;
+}
+.material-form button.flat:hover,
+.material-form input[type="submit"].flat:hover,
+.material-form input[type="reset"].flat:hover,
+.material-form input[type="button"].flat:hover {
+    background:rgba(0,0,0,0.08);
+}
+.material-form button.flat:focus,
+.material-form input[type="submit"].flat:focus,
+.material-form input[type="reset"].flat:focus,
+.material-form input[type="button"].flat:focus {
+    background:rgba(0,0,0,0.06);
+}
+.material-form button.flat:active,
+.material-form input[type="submit"].flat:active,
+.material-form input[type="reset"].flat:active,
+.material-form input[type="button"].flat:active {
+    background:rgba(0,0,0,0.01);
+}
+.material-form button.flat:disabled,
+.material-form input[type="submit"].flat:disabled,
+.material-form input[type="reset"].flat:disabled,
+.material-form input[type="button"].flat:disabled {
+    background:transparent;
+    color:rgba(0,0,0,0.27);
+}
+/*
+    Submit button
+*/
+.material-form input[type="submit"],
+.material-form input[type="submit"]:hover,
+.material-form input[type="submit"]:focus,
+.material-form input[type="submit"]:active,
+.material-form button.submit,
+.material-form button.submit:hover,
+.material-form button.submit:focus,
+.material-form button.submit:active {
+    background:#8bc34a;
+}
+.material-form input[type="submit"]:hover,
+.material-form input[type="submit"]:focus,
+.material-form button.submit:hover,
+.material-form button.submit:focus {
+    background:#5af158;
+}
+.material-form input[type="submit"]:active,
+.material-form button.submit:active {
+    background:#a2f78d;
+}
+.material-form input[type="submit"].flat,
+.material-form button.submit.flat {
+    color:#0a8f08;
+    background:transparent;
+}
+.material-form input[type="submit"].flat:hover,
+.material-form input[type="submit"].flat:focus,
+.material-form button.submit.flat:hover,
+.material-form button.submit.flat:focus {
+    background:#5af158;
+}
+.material-form input[type="submit"].flat:active,
+.material-form button.submit.flat:active {
+    background:#a2f78d;
+}
+/*
+    Reset button
+*/
+.material-form input[type="reset"],
+.material-form input[type="reset"]:hover,
+.material-form input[type="reset"]:focus,
+.material-form input[type="reset"]:active {
+    background:#ff9800;
+}
+.material-form input[type="reset"]:hover,
+.material-form input[type="reset"]:focus {
+    background:#ffab40;
+}
+.material-form input[type="reset"]:active {
+    background:#ffd180;
+}
+.material-form input[type="reset"].flat {
+    color:#ef6c00;
+}
+.material-form input[type="reset"].flat:hover,
+.material-form input[type="reset"].flat:focus {
+    background:#ffab40!important;
+}
+.material-form input[type="reset"].flat:active {
+    background:#ffd180!important;
+}
+/*
+    Buttons with animations for when they're processing
+*/
+.material-form button.processing,
+.material-form input[type="submit"].processing,
+.material-form input[type="reset"].processing,
+.material-form input[type="button"].processing {
+    padding-right:52px;
+    position:relative;
+    transition:0.7s ease;
+    color:rgba(0,0,0,0.27) !important;
+    background:rgba(0,0,0,0.08) !important;
+    transform:none !important;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.24) inset !important;
+    cursor:default;
+}
+@keyframes cubemove {
+    0% {
+        transform:translatey(0) translatex(0) rotate(0) scale(1.5);
+        opacity:1;
+    }
+    25% {
+        transform:translatey(16px) translatex(0) rotate(135deg) scale(1.5);
+        opacity:1;
+    }
+    50% {
+        transform:translatey(16px) translatex(-16px) rotate(180deg) scale(1.5);
+        opacity:1;
+    }
+    75% {
+        transform:translatey(0) translatex(-16px) rotate(315deg) scale(1.5);
+        opacity:1;
+    }
+    100% {
+        transform:translatey(0) translatex(0) rotate(360deg) scale(1.5);
+        opacity:1;
+    }
+}
+@-webkit-keyframes cubemove {
+    0% {
+        transform:translatey(0) translatex(0) rotate(0) scale(1.5);
+        opacity:1;
+    }
+    25% {
+        transform:translatey(16px) translatex(0) rotate(135deg) scale(1.5);
+        opacity:1;
+    }
+    50% {
+        transform:translatey(16px) translatex(-16px) rotate(180deg) scale(1.5);
+        opacity:1;
+    }
+    75% {
+        transform:translatey(0) translatex(-16px) rotate(315deg) scale(1.5);
+        opacity:1;
+    }
+    100% {
+        transform:translatey(0) translatex(0) rotate(360deg) scale(1.5);
+        opacity:1;
+    }
+}
+.material-form button:after,
+.material-form input[type="submit"]:after,
+.material-form input[type="reset"]:after,
+.material-form input[type="button"]:after,
+.material-form button:before,
+.material-form input[type="submit"]:before,
+.material-form input[type="reset"]:before,
+.material-form input[type="button"]:before {
+    opacity:0;
+}
+.material-form button.processing:after,
+.material-form input[type="submit"].processing:after,
+.material-form input[type="reset"].processing:after,
+.material-form input[type="button"].processing:after,
+.material-form button.processing:before,
+.material-form input[type="submit"].processing:before,
+.material-form input[type="reset"].processing:before,
+.material-form input[type="button"].processing:before {
+    opacity:0;
+    content:"";
+    display:block;
+    position:absolute;
+    height:8px;
+    width:8px;
+    background:#f00;
+    top:16px;
+    right:16px;
+    animation: cubemove 1.8s infinite linear;
+    -webkit-animation: cubemove 1.8s infinite linear;
+    background:rgba(0,0,0,0.27);
+    background:#5af158;
+}
+.material-form button.processing:after,
+.material-form input[type="submit"].processing:after,
+.material-form input[type="reset"].processing:after,
+.material-form input[type="button"].processing:after {
+    animation-delay:0.9s;
+    -webkit-animation-delay:0.9s;
+}
+/*
+    Shared between checkboxes and radios
+*/
+.material-form input[type="checkbox"],
+.material-form input[type="radio"] {
+    opacity:0;
+    position:absolute;
+    z-index:-1;
+}
+.material-form input[type="checkbox"] + label,
+.material-form input[type="radio"] + label {
+    cursor:pointer;
+    display:inline-block;
+    font-weight:600;
+    padding-right:24px;
+    color:rgba(0,0,0,0.54);
+    transition:all 0.5s ease;
+    position:relative;
+    padding-left:48px;
+    padding-top:4px;
+    padding-bottom:4px;
+    line-height:20px;
+    outline:0 dotted rgba(0,0,0,0.1);
+}
+.material-form input[type="checkbox"]:hover + label,
+.material-form input[type="checkbox"]:checked + label,
+.material-form input[type="radio"]:hover + label,
+.material-form input[type="radio"]:checked + label {
+    color:rgba(0,0,0,0.87);
+    transition:all 0.25s ease;
+}
+.material-form input[type="checkbox"]:disabled + label,
+.material-form input[type="radio"]:disabled + label {
+    color:rgba(0,0,0,0.27);
+    cursor:default;
+}
+.material-form input[type="checkbox"]:focus + label,
+.material-form input[type="radio"]:focus + label {
+    outline:2px dotted rgba(0,0,0,0.1);
+    color:rgba(0,0,0,0.87);
+}
+/*
+    Checkboxes
+*/
+.material-form input[type="checkbox"] + label:before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:2px;
+    left:12px;
+    height:24px;
+    width:24px;
+    border:4px solid rgba(0,0,0,0.12);
+    background:#fff;
+    transition:all 0.5s ease;
+}
+.material-form input[type="checkbox"] + label:hover:before {
+    border-color:rgba(139,195,74,0.54);
+}
+.material-form input[type="checkbox"]:checked + label:before {
+    border-color:#8bc34a;
+    border-right:0 solid #fff !important;
+    border-bottom:0 solid #fff !important;
+    border-left-width:6px;
+    border-top-width:6px;
+    background:transparent;
+    width:12px;
+    left:18px;
+    top:-1px;
+    transform:rotate(225deg);
+    transition:all 0.25s ease;
+}
+.material-form input[type="checkbox"]:checked + label:hover:before {
+    border-color:#64dd17;
+    transition:all 0.75s ease;
+}
+.material-form input[type="checkbox"]:disabled + label:before {
+    border-color:rgba(0,0,0,0.08) !important;
+}
+.material-form input[type="checkbox"]:checked:disabled + label:before {
+    border-color:rgba(0,0,0,0.12) !important;
+}
+/*
+    Switches
+*/
+.material-form input[type="checkbox"].switch + label:before {
+    border:0;
+    background:rgba(0,0,0,0.12);
+    height:2px !important;
+    border-radius:2px;
+    width:22px !important;
+    top:13px !important;
+    left:13px !important;
+}
+.material-form input[type="checkbox"].switch:checked + label:before {
+    transform:none;
+}
+.material-form input[type="checkbox"].switch + label:after {
+    content:"";
+    display:block;
+    position:absolute;
+    width:18px;
+    height:18px;
+    border:4px solid rgba(0,0,0,0.12);
+    background:#fff;
+    top:5px;
+    left:4px;
+    border-radius:12px;
+    transition:all 0.5s ease;
+}
+.material-form input[type="checkbox"].switch:hover + label:after {
+    border-color:#8bc34a;
+}
+.material-form input[type="checkbox"].switch:hover + label:before,
+.material-form input[type="checkbox"].switch:checked + label:before {
+    background:#8bc34a;
+}
+.material-form input[type="checkbox"].switch:checked + label:after {
+    left:26px;
+    background:#8bc34a;
+    border:0 solid #8bc34a;
+    transition:all 0.25s ease;
+}
+.material-form input[type="checkbox"].switch:checked + label:hover:after {
+    border:4px solid #8bc34a;
+    background:#ccff90;
+}
+.material-form input[type="checkbox"].switch:disabled + label:before {
+    background:rgba(0,0,0,0.12) !important;
+}
+.material-form input[type="checkbox"].switch:disabled + label:after {
+    background:#fff !important;
+    border-color:rgba(0,0,0,0.12) !important;
+}
+.material-form input[type="checkbox"].switch:checked:disabled + label:before {
+    border-radius:0;
+    width:13px !important;
+}
+.material-form input[type="checkbox"].switch:checked:disabled + label:after {
+    background:rgba(0,0,0,0.12) !important;
+    border-color:rgba(0,0,0,0.12) !important;
+    border-width:0 !important;
+}
+/*
+    Radio buttons
+*/
+.material-form input[type="radio"] + label:before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:1px;
+    left:11px;
+    height:26px;
+    width:26px;
+    border:4px solid rgba(0,0,0,0.12);
+    border-radius:13px;
+    background:#fff;
+}
+.material-form input[type="radio"] + label:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:1px;
+    left:11px;
+    height:26px;
+    width:26px;
+    border-radius:13px;
+    background:#8bc34a;
+    opacity:0;
+    transform:scale(0.01);
+    transition:all 0.5s ease;
+}
+.material-form input[type="radio"] + label:hover:after {
+    opacity:0.5;
+    transform:scale(0.5);
+}
+.material-form input[type="radio"]:checked + label:after {
+    opacity:1;
+    transform:scale(1);
+    transition:all 0.25s ease;
+}
+.material-form input[type="radio"]:checked + label {
+    cursor:default;
+}
+.material-form input[type="radio"]:disabled + label:before {
+    border-color:rgba(0,0,0,0.08);
+}
+.material-form input[type="radio"]:disabled + label:after {
+    background:transparent !important;
+}
+.material-form input[type="radio"]:checked:disabled + label:before {
+    background:rgba(0,0,0,0.12) !important;
+    border:0;
+}
+.material-form input[type="radio"]:checked:disabled + label:after {
+    background:rgba(0,0,0,0.12) !important;
+}
+/*
+    Firefox hacks
+*/
+.material-form button::-moz-focus-inner,
+.material-form input::-moz-focus-inner {
+    border:0;
+}
+select:-moz-focusring {
+    color:transparent;
+    text-shadow:0 0 0 #000;
+}

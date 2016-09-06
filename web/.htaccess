@@ -1,0 +1,32 @@
+<IfModule pagespeed_module>
+ModPagespeedRewriteLevel CoreFilters
+ModPagespeed on
+ModPagespeedEnableFilters canonicalize_javascript_libraries,inline_import_to_link,convert_meta_tags,rewrite_images,inline_javascript,rewrite_javascript,extend_cache,remove_comments,combine_css,combine_javascript,insert_dns_prefetch,elide_attributes,rewrite_css,inline_css,rewrite_style_attributes_with_url,fallback_rewrite_css_urls
+</IfModule>
+
+# 480 weeks
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+ 
+# 2 DAYS
+<FilesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+ 
+# 2 HOURS
+<FilesMatch "\.(html|htm|css|js)$">
+Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
+
+# COMPRESSION
+<FilesMatch ".(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+#route all non-existant requests through the linker
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) linker/linker.php?f=$1 [NC]
+
+# ErrorDocument 404 /error/404.php

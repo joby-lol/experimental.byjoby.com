@@ -1,0 +1,9 @@
+[21-Sep-2014 17:01:58 America/New_York] PHP Fatal error:  Uncaught exception 'ImagickException' with message 'Unable to draw image' in /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php:67
+Stack trace:
+#0 /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php(67): Imagick->drawimage(Object(ImagickDraw))
+#1 /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php(74): drawPixelpileLogo('1000', 'joby', Array)
+#2 {main}
+  thrown in /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php on line 67
+[21-Sep-2014 17:11:39 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php on line 42
+[21-Sep-2014 17:11:40 America/New_York] PHP Parse error:  syntax error, unexpected ';' in /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php on line 42
+[21-Sep-2014 19:40:18 America/New_York] PHP Fatal error:  Function name must be a string in /home/byjobyne/public_html/experimental.byjoby.com/2014/pixelpile-logo-generator/logo.php on line 44
